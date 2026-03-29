@@ -201,87 +201,67 @@ let endMarker = null;
 // =========================
 let userMarker = null;
 let accuracyCircle = null;
-let userLatLng = null;
+let watchId = null;
 
 function startLiveLocation() {
 
     if (!navigator.geolocation) {
-        console.log("Geolocation not supported");
+        alert("Geolocation not supported");
         return;
     }
 
-    navigator.geolocation.watchPosition(
+    watchId = navigator.geolocation.watchPosition(
 
-        function (pos) {
+        function(position) {
 
-            let lat = pos.coords.latitude;
-            let lon = pos.coords.longitude;
-            let accuracy = pos.coords.accuracy;
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            const accuracy = position.coords.accuracy;
 
-            userLatLng = [lat, lon];
+            console.log("Live:", lat, lng);
 
-            // Create marker first time
             if (!userMarker) {
 
-                // Blue dot
-                userMarker = L.circleMarker([lat, lon], {
+                userMarker = L.circleMarker([lat, lng], {
                     radius: 8,
                     color: "#136AEC",
                     fillColor: "#2A93EE",
-                    fillOpacity: 1,
-                    weight: 2
+                    fillOpacity: 1
                 }).addTo(map);
 
-                // Accuracy circle
-                accuracyCircle = L.circle([lat, lon], {
+                accuracyCircle = L.circle([lat, lng], {
                     radius: accuracy,
                     color: "#136AEC",
-                    fillColor: "#136AEC",
-                    fillOpacity: 0.15,
-                    weight: 1
+                    fillOpacity: 0.15
                 }).addTo(map);
 
             } 
             else {
 
-                // Move marker
-                userMarker.setLatLng([lat, lon]);
-
-                // Update accuracy circle
-                accuracyCircle.setLatLng([lat, lon]);
+                userMarker.setLatLng([lat, lng]);
+                accuracyCircle.setLatLng([lat, lng]);
                 accuracyCircle.setRadius(accuracy);
+
             }
 
-            // Auto follow user (like Google Maps)
-            map.setView([lat, lon], 19);
-
-            // Live Navigation Route Update
-            if (endNode && graphLoaded) {
-
-                let liveStartNode =
-                    getNearestNode([lon, lat]);
-
-                let path = dijkstra(
-                    liveStartNode,
-                    endNode
-                );
-
-                drawRoute(path);
-            }
+            // Follow user like Google Maps
+            map.flyTo([lat, lng], 19);
 
         },
 
-        function (err) {
-            console.log("GPS error:", err);
+        function(error) {
+            console.error("GPS error:", error);
         },
 
         {
             enableHighAccuracy: true,
             maximumAge: 0,
-            timeout: 5000
+            timeout: 15000
         }
     );
 }
+
+startLiveLocation();
 
 // =========================
 // MAP CLICK
@@ -365,7 +345,3 @@ map.on("click", function (e) {
 
 });
 
-// =========================
-// START LIVE GPS
-// =========================
-startLiveLocation();
