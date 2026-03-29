@@ -349,4 +349,8 @@ map.on("click", function (e) {
 
 });
 
-startLiveLocation();
+map.whenReady(() => {
+    
+    startLiveLocation();
+    console.log("GPS Started");
+});
