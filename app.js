@@ -261,12 +261,16 @@ function startLiveLocation() {
     );
 }
 
-startLiveLocation();
+
 
 // =========================
 // MAP CLICK
 // =========================
 map.on("click", function (e) {
+
+    if (!userMarker) {
+        startLiveLocation();
+    }
 
     if (!graphLoaded) {
         alert("Graph loading...");
@@ -345,3 +349,4 @@ map.on("click", function (e) {
 
 });
 
+startLiveLocation();
