@@ -1,22 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Navigation</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <h2>Campus Navigation System</h2>
     <p>First click = Start, second click = End, third click = Reset</p>
     <p>Live location is also shown on the map</p>
 
+    <div class="controls">
+      <select id="startSelect">
+        <option value="">Select Start</option>
+        <option value="live">My Location</option>
+      </select>
+
+      <select id="endSelect">
+        <option value="">Select Destination</option>
+      </select>
+
+      <button onclick="startNavigation()">Start Navigation</button>
+    </div>
+
     <div id="map"></div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
