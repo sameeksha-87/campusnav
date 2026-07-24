@@ -1,0 +1,585 @@
+[
+{
+  "id": "FAC001",
+  "name": "Nescafe",
+  "category": "Cafe",
+  "aliases": ["Nescafe Cafe", "Nescafé", "Campus Cafe"],
+  "location": "Beside H1 Hostel, between Bus Stop 4 and H1 Hostel",
+  "nearby_landmarks": ["H1 Hostel","Bus Stop 4"],
+  "operating_hours": {
+    "daily": {
+      "open": "11:00 AM",
+      "close": "10:30 PM"
+    }
+  },
+  "description": "Nescafe is one of the most popular food outlets on the IIITDM Jabalpur campus. It serves coffee, tea, beverages, burgers, sandwiches, snacks, desserts, fresh juices, and other fast-food items. Students frequently visit Nescafe for meals, group discussions, evening refreshments, and late-night snacks.",
+  "services": ["Coffee", "Tea", "Hot Beverages", "Cold Beverages", "Fast Food", "Burgers", "Sandwiches", "Snacks", "Desserts", "Fresh Juices", "Delivery"],
+  "keywords": ["nescafe", "cafe", "coffee", "tea", "cold coffee", "hot coffee", "burger", "sandwich", "pizza", "snacks", "juice", "dessert", "beverages", "fast food", "food", "hangout", "delivery"],
+  "faqs": [
+    "Where is Nescafe located?",
+    "What are Nescafe timings?",
+    "Is Nescafe open now?",
+    "What food items are available at Nescafe?",
+    "Does Nescafe provide delivery?",
+    "Does Nescafe accept UPI payments?"
+  ],
+  "additional_information": [
+    "One of the most frequently visited food outlets on campus."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+
+{
+  "id": "FAC002",
+  "name": "Amul",
+  "category": "Cafe",
+  "aliases": ["Amul Parlour", "Amul Cafe", "Amul Outlet"],
+  "location": "Near the Primary Health Centre (PHC)",
+  "nearby_landmarks": ["Primary Health Centre (PHC)"],
+  "operating_hours": {
+    "daily": {
+      "open": "11:00 AM",
+      "close": "10:00 PM"
+    }
+  },
+  "description": "Amul is a popular campus dairy and snack outlet offering ice creams, milk-based beverages, dairy products, snacks, and refreshments. It is a preferred place for students looking for quick snacks, cold drinks, and desserts throughout the day.",
+  "services": ["Ice Cream", "Milk Products", "Milkshakes", "Lassi", "Cold Beverages", "Snacks"],
+  "keywords": ["amul", "amul parlour", "ice cream", "milk", "milkshake", "lassi", "dairy", "snacks", "cold drinks", "dessert", "refreshments", "food"],
+  "faqs": [
+    "Where is Amul located?",
+    "What are Amul timings?",
+    "Is Amul open now?",
+    "What products are available at Amul?",
+    "Does Amul sell ice cream?",
+    "Can I buy milk products at Amul?"
+  ],
+  "additional_information": [
+    "Popular for dairy products and ice creams.",
+    "Located near the Primary Health Centre (PHC)."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC003",
+  "name": "Hexagon",
+  "category": "Food Court",
+  "aliases": ["Hexagon Food Court", "Food Court"],
+  "location": "Academic Area",
+  "nearby_landmarks": ["LHTC","CLC"],
+  "operating_hours": {
+    "daily": {
+      "open": "10:00 AM",
+      "close": "6:00 PM"
+    }
+  },
+  "description": "Hexagon is the campus food court located in the academic area. It provides meals, snacks, and beverages, making it a convenient place for students and faculty during class hours.",
+  "services": ["Meals", "Lunch", "Snacks", "Beverages"],
+  "keywords": ["hexagon", "food court", "restaurant", "meal", "lunch", "snacks", "food", "beverages", "academic area"],
+  "faqs": [
+    "Where is Hexagon located?",
+    "What are Hexagon timings?",
+    "Is Hexagon open now?",
+    "What food is available at Hexagon?"
+  ],
+  "additional_information": ["Primarily serves students and faculty during academic hours."],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC004",
+  "name": "Maa Saraswati Canteen",
+  "category": "Canteen",
+  "aliases": ["MSC","MSH Canteen","Girls Hostel Canteen"],
+  "location": "Inside Maa Saraswati Girls Hostel (MSH)",
+  "nearby_landmarks": ["Maa Saraswati Girls Hostel","Nagarjuna Girls Hostel"],
+  "operating_hours": {
+    "daily": {
+      "open": "9:00 AM",
+      "close": "1:00 AM"
+    }
+  },
+  "description": "Maa Saraswati Canteen is located inside the Maa Saraswati Girls Hostel. It serves breakfast, lunch, dinner, tea, beverages, and snacks throughout the day and remains one of the few food outlets on campus open until late night.",
+  "services": ["Breakfast", "Lunch", "Dinner", "Tea", "Coffee", "Snacks", "Fast Food", "Beverages"],
+  "keywords": ["maa saraswati", "msc", "msh", "girls hostel", "canteen", "breakfast", "lunch", "dinner", "tea", "coffee", "snacks", "late night food", "food"],
+  "faqs": [
+    "Where is Maa Saraswati Canteen?",
+    "What are Maa Saraswati Canteen timings?",
+    "Is Maa Saraswati Canteen open now?",
+    "Does it serve dinner?",
+    "Is it open till late night?"
+  ],
+  "additional_information": [
+    "Only allowed for girls hostel residents and visitors."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC005",
+  "name": "H1 Canteen",
+  "category": "Hostel Canteen",
+  "aliases": ["Hostel 1 Canteen","Vasishta Canteen","H1"],
+  "location": "Inside H1 Hostel, left side after entering.",
+  "nearby_landmarks": ["H1 Hostel","Nescafe"],
+  "operating_hours": {
+    "daily": {
+      "open": "12:00 PM",
+      "close": "12:00 AM"
+    }
+  },
+  "description": "H1 Canteen is located inside Hostel 1 (Vasishta Hostel). It serves lunch, dinner, snacks, tea, coffee, beverages, and fast food. Delivery service is available for students.",
+  "services": ["Lunch", "Dinner", "Tea", "Coffee", "Snacks", "Fast Food", "Beverages", "Delivery"],
+  "keywords": ["h1", "hostel 1", "vasishta", "canteen", "food", "snacks", "tea", "coffee", "delivery", "lunch", "dinner"],
+  "faqs": [
+    "Where is H1 Canteen?",
+    "What are H1 Canteen timings?",
+    "Is H1 Canteen open now?",
+    "Does H1 Canteen provide delivery?",
+    "Can day scholars visit H1 Canteen?"
+  ],
+  "additional_information": [
+    "Delivery service is available.",
+    "Girls are allowed inside the hostel premises only until 10:30 PM as per hostel rules."
+  ],
+  "contact": {
+    "phone": "+91-7049659501",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC006",
+  "name": "H4 Canteen",
+  "category": "Hostel Canteen",
+  "aliases": ["Hostel 4 Canteen","H4"],
+  "location": "Inside Hostel 4",
+  "nearby_landmarks": ["Hostel 4"],
+  "operating_hours": {
+    "daily": {
+      "open": "",
+      "close": ""
+    }
+  },
+  "description": "H4 Canteen is located inside Hostel 4 and serves meals, snacks, tea, coffee, beverages, and fast food for hostel residents and students visiting the hostel.",
+  "services": ["Breakfast", "Lunch", "Dinner", "Tea", "Coffee", "Snacks", "Fast Food", "Beverages"],
+  "keywords": ["h4", "hostel 4", "canteen", "food", "snacks", "tea", "coffee", "breakfast", "lunch", "dinner"],
+  "faqs": [
+    "Where is H4 Canteen?",
+    "What are H4 Canteen timings?",
+    "Is H4 Canteen open now?",
+    "What food is available at H4 Canteen?"
+  ],
+  "additional_information": [
+    "Operating hours may vary depending on the vendor.",
+    "Timings will be updated once officially confirmed."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["Cash","UPI"],
+  "verified": true,
+  "source": {
+    "type": "Student Verification",
+    "name": "Campus Survey (July 2026)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC007",
+  "name": "Central Mess",
+  "category": "Mess",
+  "aliases": ["Mess1", "Mess2", "Mess"],
+  "location": "Beside H3 Hostel, near the Cricket Ground",
+  "nearby_landmarks": ["H3 Hostel","Cricket Ground"],
+  "operating_hours": {
+    "weekdays": {
+      "breakfast": "7:30 AM - 9:30 AM",
+      "lunch": "12:00 PM - 2:30 PM",
+      "dinner": "7:30 PM - 9:00 PM"
+    },
+    "weekends": {
+      "breakfast": "8:00 AM - 10:00 AM",
+      "lunch": "12:30 PM - 3:00 PM",
+      "dinner": "7:30 PM - 9:00 PM"
+    }
+  },
+  "description": "The Central Mess is the primary dining facility for students residing on campus. It serves breakfast, lunch, and dinner every day according to the scheduled timings.",
+  "services": ["Breakfast", "Lunch", "Dinner"],
+  "keywords": ["mess", "central mess", "main mess", "food", "meal", "breakfast", "lunch", "dinner", "mess timings", "campus dining"],
+  "faqs": [
+    "What are the Central Mess timings?",
+    "What time is breakfast served?",
+    "What time is lunch served?",
+    "What time is dinner served?",
+    "Where is the Central Mess?",
+    "Can non-registered students eat in the mess?"
+  ],
+  "additional_information": [
+    "Registered students can dine using their mess registration.",
+    "Non-registered students must pay separately for meals."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": ["UPI","Mess Card"],
+  "verified": true,
+  "source": {
+    "type": "Official Office",
+    "name": "Mess Administration"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC008",
+  "name": "Primary Health Centre (PHC)",
+  "category": "Medical",
+  "aliases": ["PHC","Health Centre"],
+  "location": "Beside Amul",
+  "nearby_landmarks": ["Amul"],
+  "operating_hours": {
+    "daily": {
+      "open": "8:00 AM",
+      "close": "10:00 PM"
+    }
+  },
+  "description": "The Primary Health Centre (PHC) provides basic healthcare services to students, faculty, and staff. It offers doctor consultations, first aid, basic medical treatment, and prescribed medicines for common illnesses and minor injuries.",
+  "services": ["Doctor Consultation", "First Aid", "Basic Medical Care", "Medicines", "Health Check-up"],
+  "keywords": ["phc", "health centre", "medical", "doctor", "clinic", "hospital", "medicine", "first aid", "health", "emergency", "consultation"],
+  "faqs": [
+    "Where is the PHC located?",
+    "What are the PHC timings?",
+    "Is a doctor available now?",
+    "Can students get medicines from PHC?",
+    "What medical services are available at PHC?"
+  ],
+  "additional_information": [
+    "Students should carry their institute ID while visiting.",
+    "For serious medical emergencies, patients may be referred to a nearby hospital."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Official Office",
+    "name": "Primary Health Centre (PHC)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+
+{
+  "id": "FAC009",
+  "name": "Dean Student Affairs (DSA) Office",
+  "category": "Administrative Office",
+  "aliases": ["DSA","Student Affairs Office","Dean Student Affairs"],
+  "location": "Administrative Building",
+  "nearby_landmarks": ["Administrative Block", "Entrance gate"],
+  "operating_hours": {
+    "weekdays": {
+      "open": "9:00 AM",
+      "close": "6:00 PM"
+    }
+  },
+  "description": "The Dean Student Affairs (DSA) Office is responsible for student-related administrative services including certificates, approvals, scholarships, hostel matters, student grievances, and other academic support services.",
+  "services": ["Academic Certificate", "Student Approvals", "Scholarship Assistance", "Student Grievances", "Hostel Related Services", "General Student Services"],
+  "keywords": ["dsa", "dean student affairs", "student office", "bonafide", "certificate", "approval", "hostel", "scholarship", "student services", "leave"],
+  "faqs": [
+    "Where is the DSA Office?",
+    "What are DSA Office timings?",
+    "How can I get a bonafide certificate?",
+    "Where should I submit student applications?",
+    "Does DSA handle scholarships?"
+  ],
+  "additional_information": [
+    "Office remains closed on institute holidays.",
+    "Students should carry their institute ID while visiting."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Official Office",
+    "name": "Dean Student Affairs (DSA) Office"
+  },
+  "last_updated": "2026-07-14"
+},
+
+
+
+{
+  "id": "FAC010",
+  "name": "Lecture Hall and Tutorial Complex (LHTC)",
+  "category": "Academic Building",
+  "aliases": ["LHTC","Lecture Hall","Tutorial Complex"],
+  "location": "Academic Area",
+  "nearby_landmarks": ["Central Library","CLC","Hexagon","OAT"],
+  "operating_hours": {
+    "weekdays": {
+      "open": "8:00 AM",
+      "close": "6:00 PM"
+    }
+  },
+  "description": "The Lecture Hall and Tutorial Complex (LHTC) houses lecture halls and tutorial classrooms where regular academic classes, tutorials, seminars, workshops, and examinations are conducted.",
+  "services": ["Lecture Halls", "Tutorial Rooms", "Academic Classes", "Seminars", "Workshops"],
+  "keywords": ["lhtc", "lecture hall", "tutorial", "classroom", "academic", "lecture", "exam", "seminar", "workshop", "classes"],
+  "faqs": [
+    "Where is LHTC?",
+    "What is LHTC?",
+    "Where are lectures conducted?",
+    "Where are tutorial rooms located?",
+    "Are exams conducted in LHTC?"
+  ],
+  "additional_information": [
+    "Students should follow the academic timetable for classroom allocation."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Institute Campus",
+    "name": "IIITDM Jabalpur Campus"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC011",
+  "name": "Core Lab Complex (CLC)",
+  "category": "Academic Building",
+  "aliases": ["CLC","Core Lab Complex","Laboratory Complex"],
+  "location": "Academic Area",
+  "nearby_landmarks": ["LHTC","Central Library","Hexagon"],
+  "operating_hours": {
+    "weekdays": {
+      "open": "8:00 AM",
+      "close": "6:00 PM"
+    }
+  },
+  "description": "The Core Lab Complex (CLC) houses laboratories used for practical courses, academic experiments, research activities, and project work across various engineering disciplines.",
+  "services": ["Laboratories", "Practical Sessions", "Research Facilities", "Project Work"],
+  "keywords": ["clc", "core lab complex", "laboratory", "lab", "practical", "research", "project", "engineering", "academic"],
+  "faqs": [
+    "Where is CLC?",
+    "What is CLC?",
+    "Which laboratories are located in CLC?",
+    "Are practical classes conducted in CLC?",
+    "How can I find my laboratory?"
+  ],
+  "additional_information": [
+    "Laboratory access depends on the academic timetable and instructor permissions."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Institute Campus",
+    "name": "IIITDM Jabalpur Campus"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC012",
+  "name": "Central Library",
+  "category": "Library",
+  "aliases": ["Library","Central Library","Reading Hall"],
+  "location": "Academic Area",
+  "nearby_landmarks": ["LHTC","CLC"],
+  "operating_hours": {
+    "daily": {
+      "open": "9:00 AM",
+      "close": "10:30 PM"
+    }
+  },
+  "description": "The Central Library provides access to books, journals, digital resources, study spaces, and reading halls. It supports academic learning, research, and self-study for students and faculty.",
+  "services": ["Books", "Reading Hall", "Digital Library", "Journals", "Reference Books", "Study Space"],
+  "keywords": ["library", "books", "reading", "study", "journals", "ebooks", "digital library", "reading hall", "research", "academic"],
+  "faqs": [
+    "Where is the Central Library?",
+    "What are the library timings?",
+    "Is the library open now?",
+    "Can students study in the library?",
+    "What resources are available in the library?"
+  ],
+  "additional_information": [
+    "Institute ID may be required for issuing books.",
+    "Students are expected to maintain silence inside the library."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Official Office",
+    "name": "Central Library"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC013",
+  "name": "Student Activity Centre (SAC)",
+  "category": "Sports & Recreation",
+  "aliases": ["SAC","Sports Complex","Student Activity Centre"],
+  "location": "Student Activity Centre",
+  "nearby_landmarks": ["Football Ground, MSH"],
+  "operating_hours": {
+    "daily": {
+      "open": "5:30 AM",
+      "close": "10:30 PM"
+    }
+  },
+  "description": "The Student Activity Centre (SAC) is the main recreational and fitness facility on campus. It provides indoor sports facilities, a gymnasium, spaces for student clubs, cultural activities, and various campus events.",
+  "services": ["Gym", "Indoor Sports", "Fitness", "Student Clubs", "Cultural Activities", "Events"],
+  "keywords": ["sac", "student activity centre", "gym", "sports", "indoor games", "clubs", "badminton", "table tennis" , "Cultural" , "Carrom" , "chess" , "shutterbox"],
+  "faqs": [
+    "Where is SAC located?",
+    "What are SAC timings?",
+    "Is the gym open now?",
+    "What sports facilities are available in SAC?",
+    "Can students use the gym?"
+  ],
+  "additional_information": [
+    "Students may need their institute ID to access certain facilities.",
+    "Timings for individual sports facilities may vary."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Official Office",
+    "name": "Student Activity Centre (SAC)"
+  },
+  "last_updated": "2026-07-14"
+},
+
+{
+  "id": "FAC014",
+  "name": "Open Air Theatre (OAT)",
+  "category": "Event Venue",
+  "aliases": ["OAT","Open Air Theatre"],
+  "location": "Academic Area",
+  "nearby_landmarks": [
+    "Student Activity Centre (SAC)",
+    "LHTC"
+  ],
+  "operating_hours": {
+    "daily": {
+      "open": "Open During Scheduled Events",
+      "close": "Varies"
+    }
+  },
+  "description": "The Open Air Theatre (OAT) is the institute's outdoor venue for cultural programs, club activities, festivals, and other large student events. It serves as one of the primary gathering spaces for the campus community.",
+  "services": ["Cultural Events","Club Activities","Festivals","Public Events"],
+  "keywords": ["oat","open air theatre","events","cultural events","fest","concert","club","performance","stage"],
+  "faqs": [
+    "Where is the Open Air Theatre located?",
+    "What events are held at OAT?",
+    "Is OAT open every day?",
+    "Are movie screenings conducted at OAT?",
+    "Where are cultural events organized?",
+    "Can students organize events at OAT?"
+  ],
+  "additional_information": [
+    "The venue is generally accessible during institute-approved events.",
+    "Entry requirements may vary depending on the event.",
+    "Most major cultural festivals and institute gatherings are conducted here."
+  ],
+  "contact": {
+    "phone": "",
+    "email": ""
+  },
+  "website": "",
+  "payment_methods": [],
+  "verified": true,
+  "source": {
+    "type": "Institute Campus",
+    "name": "IIITDM Jabalpur Campus"
+  },
+  "last_updated": "2026-07-14"
+}
+
+]
