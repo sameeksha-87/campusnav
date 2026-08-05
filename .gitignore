@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+.vercel/
+.system_generated/
+scratch/
+resize_icons.py
