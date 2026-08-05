@@ -129,22 +129,6 @@ body {
 
 .info-tag {
     font-size: 12px;
-<<<<<<< HEAD:style.css
-    font-weight: bold;
-    color: black;
-}
-
-.controls{
-position:absolute;
-top:10px;
-left:50px;
-z-index:1000;
-background:white;
-padding:10px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.3);
-}
-=======
     font-weight: 500;
     color: #34d399;
     display: flex;
@@ -752,5 +736,3 @@ box-shadow:0 2px 6px rgba(0,0,0,0.3);
         height: 52px;
     }
 }
-
->>>>>>> 2868d1f (Overhaul RAG search engine: modular pipeline, fuzzy matching, dynamic Xerox shop, conversational routing, strict system prompt context constraints):campus_nav/style.css
