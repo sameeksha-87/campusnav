@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIITDM Jabalpur - Campus Navigation System</title>
+
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <!-- Fuse.js for Fuzzy Search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7c3aed">
+</head>
+<body>
+
+    <!-- Full Screen Interactive Map -->
+    <div id="map"></div>
+
+    <!-- Google Maps-style Top Navigation Banner -->
+    <div id="nav-banner" class="nav-banner hidden">
+        <div class="nav-banner-icon">
+            <i class="fa-solid fa-arrow-up" id="nav-instruction-icon"></i>
+        </div>
+        <div class="nav-banner-text">
+            <span id="nav-instruction-dist">In 30 meters</span>
+            <span id="nav-instruction-action">Go straight</span>
+        </div>
+    </div>
+
+    <!-- Floating Top Left Search Card -->
+    <div id="search-card" class="search-card">
+        <!-- Mobile toggle button to collapse/expand the search card -->
+        <button id="mobile-card-toggle" class="mobile-card-toggle" title="Toggle search panel">
+            <i class="fa-solid fa-chevron-up" id="mobile-toggle-icon"></i>
+        </button>
+
+        <div class="search-card-header">
+            <i class="fa-solid fa-compass-drafting logo-icon"></i>
+            <div class="logo-text">
+                <h2>CampusNav</h2>
+                <span>IIITDM Jabalpur</span>
+            </div>
+        </div>
+
+        <div class="search-card-body">
+            <!-- Mode Tabs -->
+            <div class="mode-tabs">
+                <button class="mode-tab-btn active" id="mode-direct-btn">
+                    <i class="fa-solid fa-route"></i> Direct Route
+                </button>
+                <button class="mode-tab-btn" id="mode-itinerary-btn">
+                    <i class="fa-solid fa-list-check"></i> Plan My Visit
+                </button>
+            </div>
+
+            <!-- Direct Navigation Inputs -->
+            <div class="input-container" id="direct-inputs">
+                <!-- Start Location Group -->
+                <div class="input-group">
+                    <div class="input-label">
+                        <i class="fa-solid fa-location-crosshairs icon-start"></i> Start Location
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="start-input" placeholder="Search start location..." autocomplete="off">
+                        <button id="gps-btn" title="Use My Current Location">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </button>
+                    </div>
+                    <div id="start-suggestions" class="autocomplete-list hidden"></div>
+                </div>
+
+                <!-- Swap Divider -->
+                <div class="swap-divider">
+                    <button id="swap-btn" title="Swap Start & Destination">
+                        <i class="fa-solid fa-up-down"></i>
+                    </button>
+                </div>
+
+                <!-- Destination Group -->
+                <div class="input-group">
+                    <div class="input-label">
+                        <i class="fa-solid fa-location-dot icon-dest"></i> Destination
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="dest-input" placeholder="Search destination..." autocomplete="off">
+                        <button id="voice-tts-toggle-btn" class="voice-tts-toggle-btn" title="Toggle Voice Feedback (Text-to-Speech)">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        <button id="voice-search-btn" title="Voice Search Destination">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                    </div>
+                    <div id="dest-suggestions" class="autocomplete-list hidden"></div>
+                </div>
+
+                <!-- Voice Status Message -->
+                <div id="voice-status" class="voice-status hidden"></div>
+            </div>
+
+            <!-- Itinerary Mode Inputs -->
+            <div class="input-container hidden" id="itinerary-inputs">
+                <!-- Start Location (Shared) -->
+                <div class="input-group">
+                    <div class="input-label">
+                        <i class="fa-solid fa-location-crosshairs icon-start"></i> Start Location
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" id="itinerary-start-input" placeholder="Search start location..." autocomplete="off">
+                        <button id="itinerary-gps-btn" title="Use My Current Location">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </button>
+                    </div>
+                    <div id="itinerary-start-suggestions" class="autocomplete-list hidden"></div>
+                </div>
+                
+                <!-- Waypoint List -->
+                <div id="waypoint-list">
+                    <!-- Dynamic inputs will be inserted here -->
+                </div>
+                
+                <button id="add-stop-btn" class="add-stop-btn">
+                    <i class="fa-solid fa-circle-plus"></i> Add Destination Stop
+                </button>
+            </div>
+
+            <div class="action-buttons">
+                <button id="navigate-btn" class="btn-navigate">
+                    <i class="fa-solid fa-directions"></i> Navigate
+                </button>
+            </div>
+
+            <!-- Connection Status -->
+            <div id="connection-status" class="connection-status online">
+                <span class="status-dot"></span>
+                <span class="status-text">Online</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Bottom Map Info Card -->
+    <div id="place-info-card" class="place-info-card hidden">
+        <button id="close-info-btn" class="close-info-btn" title="Close Panel">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="info-card-content">
+            <div class="info-main">
+                <h3 id="info-name">🏢 Place Name</h3>
+                <span id="info-category" class="category-tag">Category</span>
+            </div>
+            <p id="info-desc" class="info-desc">Description of the place goes here...</p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label"><i class="fa-solid fa-map-pin"></i> Location</span>
+                    <span id="info-location" class="info-value">Loading...</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label"><i class="fa-solid fa-clock"></i> Timings</span>
+                    <span id="info-timings" class="info-value">Loading...</span>
+                </div>
+                <div class="info-item full-width">
+                    <span class="info-label"><i class="fa-solid fa-street-view"></i> Nearby Landmarks</span>
+                    <span id="info-nearby" class="info-value">Loading...</span>
+                </div>
+            </div>
+
+            <!-- Navigation Statistics -->
+            <div id="navigation-details" class="navigation-details hidden">
+                <div class="nav-metrics">
+                    <div class="metric-item">
+                        <span class="metric-label"><i class="fa-solid fa-shoe-prints"></i> Walking Distance</span>
+                        <span id="nav-distance" class="metric-value">~350 meters</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label"><i class="fa-solid fa-hourglass-half"></i> Est. Walking Time</span>
+                        <span id="nav-time" class="metric-value">~4 mins</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card-actions">
+                <button id="info-navigate-btn" class="btn-navigate">
+                    <i class="fa-solid fa-route"></i> Get Shortest Route
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Map Controls -->
+    <div class="map-controls">
+        <button id="theme-toggle-btn" title="Toggle Map Theme"><i class="fa-solid fa-moon"></i></button>
+        <button id="map-gps-btn" title="Show Current Location (GPS)"><i class="fa-solid fa-location-crosshairs"></i></button>
+        <button id="center-map-btn" title="Recenter Campus Map"><i class="fa-solid fa-compass"></i></button>
+        <button id="clear-route-btn" title="Clear Active Route"><i class="fa-solid fa-trash-can"></i></button>
+    </div>
+
+    <!-- Unified Top Right Info Banner -->
+    <div id="info-banner" class="info-banner">
+        <div class="banner-info-icon">
+            <i class="fa-solid fa-info"></i>
+        </div>
+        <div class="banner-text">
+            <h4>Campus Info Hub</h4>
+            <span>Bus Timetable & Mess Menu</span>
+        </div>
+    </div>
+
+    <!-- Unified Info Modal -->
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-circle-info"></i> IIITDM Campus Info Hub</h3>
+                <button id="close-info-modal-btn" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Main Hub Tabs -->
+                <div class="main-tabs-header">
+                    <button class="main-tab-btn active" data-main-tab="bus-hub-tab">
+                        <i class="fa-solid fa-bus"></i> Bus Timetable
+                    </button>
+                    <button class="main-tab-btn" data-main-tab="mess-hub-tab">
+                        <i class="fa-solid fa-utensils"></i> Mess Menu
+                    </button>
+                </div>
+                
+                <!-- Bus Tab Content -->
+                <div class="main-tab-content active" id="bus-hub-tab">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="bus-mon-fri">Mon - Fri</button>
+                        <button class="tab-btn" data-tab="bus-sat-sun">Sat & Sun</button>
+                        <button class="tab-btn" data-tab="bus-school">School Bus</button>
+                    </div>
+                    <div class="tab-content active" id="bus-mon-fri"></div>
+                    <div class="tab-content" id="bus-sat-sun"></div>
+                    <div class="tab-content" id="bus-school"></div>
+                </div>
+                
+                <!-- Mess Tab Content -->
+                <div class="main-tab-content" id="mess-hub-tab">
+                    <div class="mess-selector">
+                        <button class="tab-btn active" data-mess="veg">Mess 1 (Veg)</button>
+                        <button class="tab-btn" data-mess="non-veg">Mess 2 (Non-Veg)</button>
+                    </div>
+                    
+                    <div class="day-selector">
+                        <button class="day-btn active" data-day="Monday">Mon</button>
+                        <button class="day-btn" data-day="Tuesday">Tue</button>
+                        <button class="day-btn" data-day="Wednesday">Wed</button>
+                        <button class="day-btn" data-day="Thursday">Thu</button>
+                        <button class="day-btn" data-day="Friday">Fri</button>
+                        <button class="day-btn" data-day="Saturday">Sat</button>
+                        <button class="day-btn" data-day="Sunday">Sun</button>
+                    </div>
+                    
+                    <div class="mess-content-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <!-- Mobile search card toggle script -->
+    <script>
+    (function() {
+        const toggleBtn = document.getElementById('mobile-card-toggle');
+        const toggleIcon = document.getElementById('mobile-toggle-icon');
+        const searchCard = document.getElementById('search-card');
+        const cardBody = searchCard ? searchCard.querySelector('.search-card-body') : null;
+
+        if (!toggleBtn || !cardBody) return;
+
+        let isCollapsed = false;
+
+        toggleBtn.addEventListener('click', function() {
+            isCollapsed = !isCollapsed;
+            if (isCollapsed) {
+                cardBody.classList.add('collapsed');
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+                searchCard.classList.add('card-collapsed');
+                document.body.classList.add('card-collapsed-state');
+            } else {
+                cardBody.classList.remove('collapsed');
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+                searchCard.classList.remove('card-collapsed');
+                document.body.classList.remove('card-collapsed-state');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
