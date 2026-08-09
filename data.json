@@ -1,0 +1,900 @@
+[
+  {
+    "id": "ACA001",
+    "name": "Computer Science and Engineering Department",
+    "category": "Academic Department",
+
+    "search_terms": [
+      "cse",
+      "cse department",
+      "computer science",
+      "computer science department",
+      "cs department",
+      "computer engineering",
+      "computer faculty",
+      "computer lab",
+      "computer labs",
+      "computer complex"
+    ],
+
+    "description": "The Computer Science and Engineering Department is located inside the Computer Complex. It houses faculty offices, classrooms, and computer laboratories.",
+
+    "location": "Computer Complex",
+
+    "nearby": ["PHC", "Central Library"],
+
+    "route_to": "Library",
+
+    "timings": "Academic Hours"
+  },
+  {
+    "id": "ACA002",
+    "name": "Electronics and Communication Engineering Department",
+    "category": "Academic Department",
+
+    "search_terms": [
+      "ece",
+      "ece department",
+      "electronics",
+      "electronics department",
+      "electronics and communication",
+      "electronics engineering",
+      "communication engineering",
+      "ece faculty",
+      "ece labs",
+      "electronics lab"
+    ],
+
+    "description": "The Electronics and Communication Engineering Department is located inside the Core Lab Complex. It contains faculty offices and electronics laboratories.",
+
+    "location": "Core Lab Complex",
+
+    "nearby": ["Hexagon", "LHTC"],
+
+    "route_to": "CoreLabComplex",
+    "display_name": "Core Lab Complex",
+    "timings": "Academic Hours"
+  },
+  {
+    "id": "ACA003",
+    "name": "Mechanical Engineering Department",
+    "category": "Academic Department",
+
+    "search_terms": [
+      "me",
+      "me department",
+      "mechanical",
+      "mechanical department",
+      "mechanical engineering",
+      "mechanical labs",
+      "mechanical faculty",
+      "manufacturing"
+    ],
+
+    "description": "The Mechanical Engineering Department is located inside the Core Lab Complex. It houses faculty offices and mechanical engineering laboratories.",
+
+    "location": "Core Lab Complex",
+
+    "nearby": ["Hexagon", "LHTC"],
+
+    "route_to": "CoreLabComplex",
+
+    "display_name": "Core Lab Complex",
+
+    "timings": "Academic Hours"
+  },
+  {
+    "id": "ACA004",
+    "name": "Smart Manufacturing Department",
+    "category": "Academic Department",
+
+    "search_terms": [
+      "smart manufacturing",
+      "manufacturing",
+      "sm department",
+      "smart manufacturing department",
+      "manufacturing labs"
+    ],
+
+    "description": "The Smart Manufacturing Department is located inside the Core Lab Complex.",
+
+    "location": "Core Lab Complex",
+
+    "nearby": ["Hexagon", "LHTC"],
+
+    "route_to": "CoreLabComplex",
+    "display_name": "Core Lab Complex",
+    "timings": "Academic Hours"
+  },
+  {
+    "id": "ACA005",
+    "name": "Bachelor of Design (B.Des) Studio",
+    "category": "Academic Department",
+
+    "search_terms": [
+      "design",
+      "design studio",
+      "bdes",
+      "b.des",
+      "bachelor of design",
+      "design department",
+      "design lab",
+      "design classroom",
+      "design students",
+      "design block"
+    ],
+
+    "description": "The Bachelor of Design (B.Des) Studio is located inside the Lecture Hall and Tutorial Complex (LHTC), near Room L103. It is used for design classes, studio work, and project activities.",
+
+    "location": "Lecture Hall and Tutorial Complex (LHTC)",
+
+    "nearby": ["L103", "Core Lab Complex", "Hexagon", "Central Library"],
+
+    "route_to": "LHTC",
+
+    "navigation_note": "Navigate to the entrance of the Lecture Hall and Tutorial Complex (LHTC). The Design Studio is located near Room L103 inside the building.",
+
+    "timings": "Academic Hours"
+  },
+
+  {
+    "id": "HOSTEL001",
+    "name": "Panini Hostel",
+    "category": "Hostel",
+
+    "search_terms": [
+      "panini",
+      "panini hostel",
+      "first year boys hostel",
+      "1st year boys hostel",
+      "freshers hostel",
+      "boys hostel",
+      "ug first year hostel"
+    ],
+
+    "description": "Panini Hostel accommodates first-year undergraduate boys.",
+
+    "location": "Panini Hostel",
+
+    "nearby": ["Basketball Court", "H4 Hostel"],
+
+    "route_to": "panini hostel",
+
+    "timings": "Open 24 Hours"
+  },
+
+  {
+    "id": "HOSTEL002",
+    "name": "Vashishtha Hostel (H1)",
+    "category": "Hostel",
+
+    "search_terms": [
+      "vashishtha",
+      "vashishtha hostel",
+      "hostel 1",
+      "h1",
+      "h1 hostel",
+      "fourth year boys hostel",
+      "4th year boys hostel",
+      "senior boys hostel"
+    ],
+
+    "description": "Vashishtha Hostel (H1) accommodates senior undergraduate boys.",
+
+    "location": "Vashishtha Hostel",
+
+    "nearby": ["Nescafe", "Xerox Shop", "Bus Stop 4"],
+
+    "route_to": "H1",
+
+    "timings": "Open 24 Hours"
+  },
+
+  {
+    "id": "HOSTEL003",
+    "name": "Aryabhatta Hostel (H3)",
+    "category": "Hostel",
+
+    "search_terms": [
+      "aryabhatta",
+      "aryabhatta hostel",
+      "h3",
+      "hostel 3",
+      "h3 hostel",
+      "boys hostel h3"
+    ],
+
+    "description": "Aryabhatta Hostel (H3) is one of the boys' hostels on campus.",
+
+    "location": "Aryabhatta Hostel",
+
+    "nearby": ["H4 Hostel", "Basketball Court"],
+
+    "route_to": "H3",
+
+    "timings": "Open 24 Hours"
+  },
+
+  {
+    "id": "HOSTEL004",
+    "name": "H4 Hostel",
+    "category": "Hostel",
+
+    "search_terms": ["h4", "hostel 4", "h4 hostel", "boys hostel h4"],
+
+    "description": "H4 is one of the undergraduate boys' hostels on campus.",
+
+    "location": "H4 Hostel",
+
+    "nearby": ["Panini Hostel", "Aryabhatta Hostel"],
+
+    "route_to": "H4",
+
+    "timings": "Open 24 Hours"
+  },
+
+  {
+    "id": "HOSTEL005",
+    "name": "Nagarjuna Hostel",
+    "category": "Hostel",
+
+    "search_terms": [
+      "nagarjuna",
+      "nagarjuna hostel",
+      "pg girls hostel",
+      "research scholars hostel",
+      "phd girls hostel"
+    ],
+
+    "description": "Nagarjuna Hostel accommodates postgraduate students and research scholars.",
+
+    "location": "Nagarjuna Hostel",
+
+    "nearby": ["Maa Saraswati Girls Hostel", "Cricket Ground"],
+
+    "route_to": "Nagarjuna Hostel",
+
+    "timings": "Open 24 Hours"
+  },
+
+  {
+    "id": "HOSTEL006",
+    "name": "Maa Saraswati Girls Hostel",
+    "category": "Girls Hostel",
+
+    "search_terms": [
+      "maa saraswati",
+      "maa saraswati hostel",
+      "girls hostel",
+      "girls hostel iiitdm",
+      "female hostel",
+      "women hostel",
+      "girls accommodation",
+      "girls residence",
+      "msh"
+    ],
+
+    "description": "Maa Saraswati Hostel is the primary girls' hostel on the IIITDM Jabalpur campus for undergraduate students.",
+
+    "location": "Maa Saraswati Girls Hostel",
+
+    "nearby": ["Nagarjuna Hostel", "Cricket Ground"],
+
+    "route_to": "Maa Saraswati",
+
+    "timings": "Open 24 Hours"
+  },
+  {
+    "id": "HOSTEL007",
+    "name": "Visitor Hostel (Guest House)",
+    "category": "Guest House",
+
+    "search_terms": [
+      "visitor hostel",
+      "guest house",
+      "guest accommodation",
+      "parents stay",
+      "visitor accommodation",
+      "guest rooms"
+    ],
+
+    "description": "The Visitor Hostel (Guest House) provides accommodation for institute guests, parents, visiting faculty, and officials.",
+
+    "location": "Visitor Hostel",
+
+    "nearby": ["Central Library", "PHC"],
+
+    "route_to": "Visitors Hostel",
+
+    "timings": "Open 24 Hours"
+  },
+  {
+    "id": "RES001",
+    "name": "Professors' Residence",
+    "category": "Residential Area",
+    "aliases": [
+      "Faculty Residence",
+      "Professor Residence",
+      "Faculty Housing",
+      "Professors Quarters"
+    ],
+    "search_terms": [
+      "professor residence",
+      "professors residence",
+      "faculty residence",
+      "faculty housing",
+      "teacher residence",
+      "professor house",
+      "professors quarters",
+      "faculty quarters"
+    ],
+    "location": "Faculty Residential Area",
+    "nearby_landmarks": ["Narmada Residency", "Rewa Residency"],
+    "description": "Residential area for senior faculty members and professors of IIITDM Jabalpur.",
+    "route_to": "faculty residence"
+  },
+  {
+    "id": "RES002",
+    "name": "Assistant Professors' Residence",
+    "category": "Residential Area",
+    "aliases": [
+      "Rewa Residency",
+      "RWA",
+      "Assistant Faculty Residence",
+      "Assistant Faculty Housing"
+    ],
+    "search_terms": [
+      "assistant professor residence",
+      "assistant professors residence",
+      "assistant faculty residence",
+      "assistant faculty housing",
+      "married assistant professor",
+      "faculty quarters",
+      "rewa residency",
+      "rwa"
+    ],
+    "location": "Rewa Residency",
+    "nearby_landmarks": ["Narmada Residency", "Faculty Residence"],
+    "description": "Residential area for assistant professors and their families.",
+    "route_to": "rewa residency"
+  },
+  {
+    "id": "RES003",
+    "name": "Narmada Residency",
+    "category": "Residential Area",
+    "aliases": ["Narmada Residence", "Faculty Flats"],
+    "search_terms": [
+      "narmada residency",
+      "narmada residence",
+      "faculty flats",
+      "staff residence",
+      "faculty apartments"
+    ],
+    "location": "Residential Area",
+    "nearby_landmarks": ["Rewa Residency", "Professors' Residence"],
+    "description": "Residential accommodation for institute faculty and staff.",
+    "route_to": "narmada residency"
+  },
+
+  {
+    "id": "FAC001",
+    "name": "Xerox & Stationery Shop",
+    "category": "Facility",
+
+    "search_terms": [
+      "xerox",
+      "xerox shop",
+      "photocopy",
+      "photocopy shop",
+      "printing",
+      "print",
+      "printout",
+      "printer",
+      "stationery",
+      "stationery shop",
+      "spiral binding",
+      "binding",
+      "lamination",
+      "notes print",
+      "colour print",
+      "black and white print",
+      "documents",
+      "file",
+      "pens",
+      "notebooks"
+    ],
+
+    "description": "The Xerox & Stationery Shop is located beside Nescafe near Hostel 1 (H1). Students can get photocopies, printouts, spiral binding, lamination, and purchase stationery items such as notebooks, pens, files, and other academic supplies.",
+
+    "location": "Beside Nescafe",
+
+    "nearby": ["Nescafe", "Vashishtha Hostel (H1)", "Bus Stop 4"],
+
+    "route_to": "Nescafe",
+
+    "navigation_note": "Navigate to Nescafe. The Xerox & Stationery Shop is located beside Nescafe.",
+
+    "timings": "Campus Shop Hours"
+  },
+  {
+    "id": "FAC002",
+    "name": "General Store",
+    "category": "Shopping",
+
+    "search_terms": [
+      "general store",
+      "grocery",
+      "campus store",
+      "daily essentials",
+      "snacks",
+      "biscuits",
+      "cold drinks",
+      "soft drinks",
+      "maggi",
+      "instant noodles",
+      "chips",
+      "toiletries",
+      "toothpaste",
+      "toothbrush",
+      "soap",
+      "shampoo",
+      "detergent",
+      "bucket",
+      "mug",
+      "lock",
+      "stationery",
+      "college essentials",
+      "daily needs"
+    ],
+
+    "description": "The General Store is located beside Nescafe near Hostel 1 (H1). It sells daily essentials, groceries, snacks, beverages, toiletries, stationery, and other items commonly needed by students.",
+
+    "location": "Beside Nescafe",
+
+    "nearby": [
+      "Nescafe",
+      "Vashishtha Hostel (H1)",
+      "Xerox & Stationery Shop",
+      "Bus Stop 4"
+    ],
+
+    "route_to": "Nescafe",
+
+    "navigation_note": "Navigate to Nescafe. The General Store is located beside Nescafe.",
+
+    "timings": "Campus Shop Hours"
+  },
+
+  {
+    "id": "FOOD001",
+    "name": "Nescafe",
+    "category": "Cafe",
+
+    "search_terms": [
+      "nescafe",
+      "coffee",
+      "cafe",
+      "tea",
+      "burger",
+      "sandwich",
+      "snacks",
+      "cold coffee",
+      "juice",
+      "fast food"
+    ],
+
+    "description": "Nescafe is one of the most popular food outlets on campus. It serves coffee, tea, beverages, burgers, sandwiches, snacks, desserts and fresh juices. The Xerox & Stationery Shop and General Store are located beside Nescafe.",
+
+    "location": "Beside Vashishtha Hostel (H1)",
+
+    "nearby": [
+      "Xerox & Stationery Shop",
+      "General Store",
+      "Bus Stop 4",
+      "Vashishtha Hostel (H1)"
+    ],
+
+    "route_to": "Nescafe",
+
+    "timings": "11:00 AM – 10:30 PM"
+  },
+
+  {
+    "id": "FOOD002",
+    "name": "Amul",
+    "category": "Cafe",
+
+    "search_terms": [
+      "amul",
+      "amul parlour",
+      "ice cream",
+      "milk",
+      "lassi",
+      "buttermilk",
+      "cold drinks",
+      "chocolate",
+      "dairy products",
+      "milk products"
+    ],
+
+    "description": "Amul Parlour offers ice creams, milk products, beverages, chocolates and light refreshments for students and visitors.",
+
+    "location": "Campus",
+
+    "nearby": ["Academic Area"],
+
+    "route_to": "Amul",
+
+    "timings": "Shop Hours"
+  },
+
+  {
+    "id": "FOOD003",
+    "name": "Central Mess (CM)",
+    "category": "Mess",
+
+    "search_terms": [
+      "mess",
+      "central mess",
+      "cm",
+      "breakfast",
+      "lunch",
+      "dinner",
+      "food",
+      "canteen",
+      "student mess"
+    ],
+
+    "description": "The Central Mess serves breakfast, lunch, snacks and dinner for hostel residents.",
+
+    "location": "Central Mess Building",
+
+    "nearby": ["H3 Hostel", "H4 Hostel"],
+
+    "route_to": "CM",
+
+    "timings": "Breakfast, Lunch & Dinner Hours"
+  },
+
+  {
+    "id": "FOOD004",
+    "name": "Hexagon Food Court",
+    "category": "Food Court",
+
+    "search_terms": [
+      "hexagon",
+      "hex",
+      "food court",
+      "restaurant",
+      "food",
+      "canteen",
+      "meal",
+      "lunch",
+      "dinner"
+    ],
+
+    "description": "Hexagon is the campus food court offering a variety of meals, snacks and beverages. It is located near the Core Lab Complex.",
+
+    "location": "Near Core Lab Complex",
+
+    "nearby": ["Core Lab Complex", "LHTC"],
+
+    "route_to": "HEX",
+
+    "timings": "Food Court Hours"
+  },
+
+  {
+    "id": "FOOD005",
+    "name": "H1 Canteen",
+    "category": "Canteen",
+
+    "search_terms": [
+      "h1 canteen",
+      "hostel 1 canteen",
+      "vashishtha canteen",
+      "canteen h1",
+      "hostel canteen"
+    ],
+
+    "description": "The H1 Canteen serves meals, snacks and beverages for students staying in and around Vashishtha Hostel.",
+
+    "location": "Vashishtha Hostel (H1)",
+
+    "nearby": ["Nescafe", "Bus Stop 4"],
+
+    "route_to": "H1",
+
+    "timings": "Canteen Hours"
+  },
+
+  {
+    "id": "FOOD006",
+    "name": "H4 Canteen",
+    "category": "Canteen",
+
+    "search_terms": [
+      "h4 canteen",
+      "hostel 4 canteen",
+      "canteen h4",
+      "hostel canteen"
+    ],
+
+    "description": "The H4 Canteen serves meals, snacks and beverages for students staying in nearby hostels.",
+
+    "location": "H4 Hostel",
+
+    "nearby": ["H3 Hostel", "Panini Hostel"],
+
+    "route_to": "H4",
+
+    "timings": "Canteen Hours"
+  },
+  {
+    "id": "ADMIN001",
+    "name": "Dean Student Affairs (DSA) Office",
+    "category": "Administrative Office",
+
+    "search_terms": [
+      "dsa",
+      "dsa office",
+      "dean student affairs",
+      "student affairs",
+      "bonafide certificate",
+      "scholarship",
+      "student certificates",
+      "hostel issues",
+      "student grievances",
+      "approvals"
+    ],
+
+    "description": "The Dean Student Affairs (DSA) Office handles student-related services including bonafide certificates, scholarships, hostel matters, approvals and student grievances.",
+
+    "location": "Academic Office",
+
+    "nearby": [
+      "Accounts Office",
+      "Director Office",
+      "Placement Cell"
+    ],
+
+    "route_to": "Academic Office",
+
+    "navigation_note": "Navigate to the Academic Office building. The DSA Office is located inside.",
+
+    "timings": "Office Hours"
+  },
+
+  {
+    "id": "ADMIN002",
+    "name": "Academic Office",
+    "category": "Administrative Office",
+
+    "search_terms": [
+      "academic office",
+      "academics",
+      "registration",
+      "course registration",
+      "semester registration",
+      "grades",
+      "transcript",
+      "academic section",
+      "student records"
+    ],
+
+    "description": "The Academic Office manages academic records, registrations, transcripts, examinations and other academic services.",
+
+    "location": "Academic Office",
+
+    "nearby": [
+      "DSA Office",
+      "Accounts Office",
+      "Director Office"
+    ],
+
+    "route_to": "Academic Office",
+
+    "timings": "Office Hours"
+  },
+
+  {
+    "id": "ADMIN003",
+    "name": "Placement Cell",
+    "category": "Administrative Office",
+
+    "search_terms": [
+      "placement",
+      "placement cell",
+      "training and placement",
+      "tnp",
+      "internships",
+      "placements",
+      "career office"
+    ],
+
+    "description": "The Placement Cell coordinates internships, placements, company visits and career-related activities for students.",
+
+    "location": "Academic Office",
+
+    "nearby": [
+      "Academic Office",
+      "DSA Office"
+    ],
+
+    "route_to": "Academic Office",
+
+    "navigation_note": "Navigate to the Academic Office building. The Placement Cell is located inside.",
+
+    "timings": "Office Hours"
+  },
+
+  {
+    "id": "ADMIN004",
+    "name": "Director Office",
+    "category": "Administrative Office",
+
+    "search_terms": [
+      "director",
+      "director office",
+      "director cabin",
+      "director room",
+      "director iiitdm"
+    ],
+
+    "description": "The Director Office is the administrative office of the Institute Director.",
+
+    "location": "Academic Office",
+
+    "nearby": [
+      "Academic Office",
+      "Accounts Office"
+    ],
+
+    "route_to": "Academic Office",
+
+    "navigation_note": "Navigate to the Academic Office building. The Director Office is located inside.",
+
+    "timings": "Office Hours"
+  },
+
+  {
+    "id": "ADMIN005",
+    "name": "Accounts Office",
+    "category": "Administrative Office",
+
+    "search_terms": [
+      "accounts",
+      "accounts office",
+      "fees",
+      "fee payment",
+      "finance",
+      "cash section",
+      "tuition fees",
+      "payments"
+    ],
+
+    "description": "The Accounts Office handles fee payments, financial transactions and other finance-related services.",
+
+    "location": "Academic Office",
+
+    "nearby": [
+      "Academic Office",
+      "DSA Office",
+      "Director Office"
+    ],
+
+    "route_to": "Academic Office",
+
+    "navigation_note": "Navigate to the Academic Office building. The Accounts Office is located inside.",
+
+    "timings": "Office Hours"
+  },
+  {
+    "id": "BUS001",
+    "name": "Bus Stop - Maa Saraswati Girls Hostel",
+    "category": "Bus Stop",
+
+    "search_terms": [
+      "bus stop",
+      "girls hostel bus stop",
+      "maa saraswati bus stop",
+      "msh bus stop",
+      "bus stop near girls hostel"
+    ],
+
+    "description": "Bus stop located near Maa Saraswati Girls Hostel.",
+
+    "location": "Near Maa Saraswati Girls Hostel",
+
+    "nearby": [
+      "Maa Saraswati Girls Hostel",
+      "Nagarjuna Hostel"
+    ],
+
+    "route_to": "Bus Stop - MSH",
+
+    "timings": "Available Throughout the Day"
+  },
+
+  {
+    "id": "BUS002",
+    "name": "Bus Stop - Rewa Residency",
+    "category": "Bus Stop",
+
+    "search_terms": [
+      "bus stop",
+      "rewa bus stop",
+      "bus stop near rewa residency",
+      "faculty residence bus stop"
+    ],
+
+    "description": "Bus stop located near Rewa Residency and faculty residences.",
+
+    "location": "Near Rewa Residency",
+
+    "nearby": [
+      "Rewa Residency",
+      "Faculty Residence"
+    ],
+
+    "route_to": "Bus Stop - Rewa",
+
+    "timings": "Available Throughout the Day"
+  },
+
+  {
+    "id": "BUS003",
+    "name": "Bus Stop - Panini Hostel",
+    "category": "Bus Stop",
+
+    "search_terms": [
+      "bus stop",
+      "panini bus stop",
+      "bus stop near panini",
+      "first year hostel bus stop",
+      "freshers hostel bus stop"
+    ],
+
+    "description": "Bus stop located near Panini Hostel.",
+
+    "location": "Near Panini Hostel",
+
+    "nearby": [
+      "Panini Hostel",
+      "H4 Hostel"
+    ],
+
+    "route_to": "Bus Stop - Panini",
+
+    "timings": "Available Throughout the Day"
+  },
+
+  {
+    "id": "BUS004",
+    "name": "Bus Stop - Nescafe",
+    "category": "Bus Stop",
+
+    "search_terms": [
+      "bus stop",
+      "nescafe bus stop",
+      "bus stop near nescafe",
+      "h1 bus stop",
+      "bus stop 4"
+    ],
+
+    "description": "Bus stop located near Nescafe and Vashishtha Hostel (H1).",
+
+    "location": "Near Nescafe",
+
+    "nearby": [
+      "Nescafe",
+      "Vashishtha Hostel (H1)",
+      "Xerox & Stationery Shop",
+      "General Store"
+    ],
+
+    "route_to": "Bus Stop - Nescafe",
+
+    "timings": "Available Throughout the Day"
+  }
+]

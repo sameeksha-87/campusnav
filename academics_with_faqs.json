@@ -1,0 +1,337 @@
+{
+  "academic_administrative": [
+    {
+      "id": "ACA001",
+      "category": "department",
+      "name": "Computer Science and Engineering Department",
+      "type": "Department",
+      "location": "Computer Complex",
+      "timings": null,
+      "details": "The Computer Complex houses the offices of Computer Science and Engineering faculty members and computer laboratories.",
+      "nearby_landmarks": [
+        "PHC"
+      ],
+      "aliases": [
+        "Computer Science Department",
+        "CSE Department",
+        "Computer Science and Engineering Department"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur CSE Department website",
+      "extra_information": null,
+      "faqs": [
+        {
+          "question": "Where is the Computer Science and Engineering Department located?",
+          "answer": "The Computer Science and Engineering Department is located in the Computer Complex."
+        },
+        {
+          "question": "Where is the CSE Department?",
+          "answer": "The CSE Department is located in the Computer Complex."
+        },
+        {
+          "question": "What is located in the Computer Complex?",
+          "answer": "The Computer Complex houses CSE faculty offices and computer laboratories."
+        },
+        {
+          "question": "Where are the CSE professor offices located?",
+          "answer": "The CSE faculty offices are located in the Computer Complex."
+        },
+        {
+          "question": "Where are the CSE labs located?",
+          "answer": "The CSE computer laboratories are located in the Computer Complex."
+        },
+        {
+          "question": "What landmark is near the CSE Department?",
+          "answer": "PHC is a nearby landmark for the CSE Department."
+        }
+      ]
+    },
+    {
+      "id": "ACA002",
+      "category": "department",
+      "name": "Electronics and Communication Engineering Department",
+      "type": "Department",
+      "location": "Core Lab Complex",
+      "timings": null,
+      "details": "The department laboratories and faculty offices are located in the Core Lab Complex.",
+      "nearby_landmarks": [
+        "Hexagon"
+      ],
+      "aliases": [
+        "Electronics and Communication Engineering Department",
+        "ECE Department",
+        "Electronics Department"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur ECE Department website",
+      "extra_information": null,
+      "faqs": [
+        {
+          "question": "Where is the ECE Department located?",
+          "answer": "The ECE Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the ECE laboratories located?",
+          "answer": "The ECE laboratories are located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the ECE faculty offices located?",
+          "answer": "The ECE faculty offices are located in the Core Lab Complex."
+        },
+        {
+          "question": "Which complex houses the ECE Department?",
+          "answer": "The Core Lab Complex houses the ECE Department laboratories and faculty offices."
+        },
+        {
+          "question": "What landmark is near the ECE Department?",
+          "answer": "Hexagon is a nearby landmark for the ECE Department."
+        },
+        {
+          "question": "Where is the Electronics Department?",
+          "answer": "The Electronics Department is located in the Core Lab Complex."
+        }
+      ]
+    },
+    {
+      "id": "ACA003",
+      "category": "department",
+      "name": "Mechanical Engineering Department",
+      "type": "Department",
+      "location": "Core Lab Complex",
+      "timings": null,
+      "details": "The Mechanical Engineering faculty offices and laboratories are located in the Core Lab Complex.",
+      "nearby_landmarks": [
+        "Hexagon"
+      ],
+      "aliases": [
+        "Mechanical Engineering Department",
+        "Mechanical Department",
+        "ME Department"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur Mechanical Engineering Department website",
+      "extra_information": null,
+      "faqs": [
+        {
+          "question": "Where is the Mechanical Engineering Department located?",
+          "answer": "The Mechanical Engineering Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "Where is the Mechanical Department?",
+          "answer": "The Mechanical Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the Mechanical Engineering laboratories located?",
+          "answer": "The Mechanical Engineering laboratories are located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the Mechanical Engineering faculty offices located?",
+          "answer": "The Mechanical Engineering faculty offices are located in the Core Lab Complex."
+        },
+        {
+          "question": "What is the location of the ME Department?",
+          "answer": "The ME Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "What landmark is near the Mechanical Engineering Department?",
+          "answer": "Hexagon is a nearby landmark for the Mechanical Engineering Department."
+        }
+      ]
+    },
+    {
+      "id": "ACA004",
+      "category": "department",
+      "name": "Smart Manufacturing Department",
+      "type": "Department",
+      "location": "Core Lab Complex",
+      "timings": null,
+      "details": "The Smart Manufacturing laboratories and faculty offices are located in the Core Lab Complex.",
+      "nearby_landmarks": [
+        "Hexagon"
+      ],
+      "aliases": [
+        "Smart Manufacturing Department",
+        "SM Department"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur Smart Manufacturing Department website",
+      "extra_information": null,
+      "faqs": [
+        {
+          "question": "Where is the Smart Manufacturing Department located?",
+          "answer": "The Smart Manufacturing Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "Where is the SM Department?",
+          "answer": "The SM Department is located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the Smart Manufacturing laboratories located?",
+          "answer": "The Smart Manufacturing laboratories are located in the Core Lab Complex."
+        },
+        {
+          "question": "Where are the Smart Manufacturing faculty offices located?",
+          "answer": "The Smart Manufacturing faculty offices are located in the Core Lab Complex."
+        },
+        {
+          "question": "Which complex houses the Smart Manufacturing Department?",
+          "answer": "The Core Lab Complex houses the Smart Manufacturing Department laboratories and faculty offices."
+        },
+        {
+          "question": "What landmark is near the Smart Manufacturing Department?",
+          "answer": "Hexagon is a nearby landmark for the Smart Manufacturing Department."
+        }
+      ]
+    },
+    {
+      "id": "ACA005",
+      "category": "administrative_office",
+      "name": "Academic Office",
+      "type": "Administrative Office",
+      "location": "At the entrance to the institute",
+      "timings": {
+        "open": "9:00 AM",
+        "close": "5:30 PM"
+      },
+      "details": "The Academic Office handles admissions processing, course registration and scheduling, examinations and grade management, and the distribution of degrees and certificates.",
+      "nearby_landmarks": [
+        "Institute Entrance"
+      ],
+      "aliases": [
+        "Academic Office",
+        "DSA",
+        "Administrative Office"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur official website",
+      "extra_information": "Important forms and issues related to grades or courses are handled here. The Placement Cell and other administrative cells are also located here.",
+      "faqs": [
+        {
+          "question": "Where is the Academic Office located?",
+          "answer": "The Academic Office is located at the entrance to the institute."
+        },
+        {
+          "question": "What are the Academic Office timings?",
+          "answer": "The Academic Office is open from 9:00 AM to 5:30 PM."
+        },
+        {
+          "question": "Where can I ask about course registration or scheduling?",
+          "answer": "Course registration and scheduling matters are handled by the Academic Office."
+        },
+        {
+          "question": "Where can I go for issues related to grades or courses?",
+          "answer": "Issues related to grades or courses are handled at the Academic Office."
+        },
+        {
+          "question": "Where are examinations and grade management handled?",
+          "answer": "Examinations and grade management are handled by the Academic Office."
+        },
+        {
+          "question": "Where are degrees and certificates distributed?",
+          "answer": "Degrees and certificates are distributed through the Academic Office."
+        },
+        {
+          "question": "Where can I ask about important academic forms?",
+          "answer": "Important academic forms and related issues are handled at the Academic Office."
+        }
+      ]
+    },
+    {
+      "id": "ACA006",
+      "category": "placement_cell",
+      "name": "Placement Cell",
+      "type": "Cell",
+      "location": "Inside the Administrative Office",
+      "timings": {
+        "open": "9:00 AM",
+        "close": "5:30 PM"
+      },
+      "details": "The Placement Cell handles placement-related activities and opportunities for students.",
+      "nearby_landmarks": [
+        "Administrative Office"
+      ],
+      "aliases": [
+        "Placement Cell",
+        "Training and Placement Cell",
+        "T&P Cell"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur Placement Cell website",
+      "extra_information": "The college also has an E-Cell where students work on projects and participate in entrepreneurship-related activities. The Placement Cell provides placement opportunities for students.",
+      "faqs": [
+        {
+          "question": "Where is the Placement Cell located?",
+          "answer": "The Placement Cell is located inside the Administrative Office."
+        },
+        {
+          "question": "What are the Placement Cell timings?",
+          "answer": "The Placement Cell is open from 9:00 AM to 5:30 PM."
+        },
+        {
+          "question": "What does the Placement Cell do?",
+          "answer": "The Placement Cell handles placement-related activities and opportunities for students."
+        },
+        {
+          "question": "Where can I ask about placement opportunities?",
+          "answer": "Students can ask about placement opportunities at the Placement Cell."
+        },
+        {
+          "question": "Where is the T&P Cell?",
+          "answer": "The T&P Cell is located inside the Administrative Office."
+        },
+        {
+          "question": "Is the Training and Placement Cell the same as the Placement Cell?",
+          "answer": "Yes. Training and Placement Cell and T&P Cell are aliases for the Placement Cell in this dataset."
+        },
+        {
+          "question": "Does the college have an E-Cell?",
+          "answer": "Yes. The dataset notes that the college has an E-Cell where students work on projects and participate in entrepreneurship-related activities."
+        }
+      ]
+    },
+    {
+      "id": "ACA007",
+      "category": "academic_calendar",
+      "name": "Academic Calendar",
+      "type": "Academic Information",
+      "location": null,
+      "timings": null,
+      "details": "The Academic Calendar provides important academic dates and schedules, including registration, course adjustment, examinations and other major academic events.",
+      "nearby_landmarks": [],
+      "aliases": [
+        "Academic Calendar",
+        "Institute Academic Calendar",
+        "Academic Schedule"
+      ],
+      "contact": null,
+      "source": "IIITDM Jabalpur Academic Calendar",
+      "extra_information": "The dates may vary by academic session. Students should refer to the academic calendar for the relevant session.",
+      "faqs": [
+        {
+          "question": "What is the Academic Calendar?",
+          "answer": "The Academic Calendar provides important academic dates and schedules for the institute."
+        },
+        {
+          "question": "Where can I find registration dates?",
+          "answer": "Registration dates are provided in the Academic Calendar for the relevant academic session."
+        },
+        {
+          "question": "Where can I find examination dates?",
+          "answer": "Examination dates are provided in the Academic Calendar for the relevant academic session."
+        },
+        {
+          "question": "Where can I check course adjustment dates?",
+          "answer": "Course adjustment dates are provided in the Academic Calendar."
+        },
+        {
+          "question": "Does the Academic Calendar change every academic session?",
+          "answer": "Yes. Dates may vary by academic session, so students should refer to the calendar for the relevant session."
+        },
+        {
+          "question": "What information is included in the Academic Calendar?",
+          "answer": "It includes registration, course adjustment, examinations, and other major academic events."
+        }
+      ]
+    }
+  ]
+}
