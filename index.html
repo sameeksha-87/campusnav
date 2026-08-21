@@ -267,7 +267,63 @@
         </div>
     </div>
 
+    <!-- Floating Semantic RAG Chatbot Widget -->
+    <div id="chat-widget-card" class="chat-widget-card hidden">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h3>Campus AI Assistant</h3>
+                    <span class="chat-status"><span class="status-pulse"></span> Gemini Semantic RAG Active</span>
+                </div>
+            </div>
+            <div class="chat-header-controls">
+                <label class="debug-toggle-label" title="Toggle debug view of top 3 cosine similarity matched FAQs">
+                    <input type="checkbox" id="chat-debug-toggle" checked> Debug
+                </label>
+                <button id="chat-close-btn" class="chat-icon-btn" title="Minimize Chat">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-msg bot-msg">
+                <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                <div class="msg-bubble bot-bubble">
+                    <div class="msg-text">
+                        Hello! 👋 I'm your IIITDM Campus Assistant powered by <strong>Gemini Semantic RAG</strong>. Ask me anything about academic departments, facilities, hostels, canteens, or timings!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Question Chips -->
+            <div class="chat-chips-container">
+                <button class="chat-chip" data-question="Where is Nescafe located?">☕ Nescafe location?</button>
+                <button class="chat-chip" data-question="What are PHC timings?">🏥 PHC timings?</button>
+                <button class="chat-chip" data-question="Where is the CSE Department?">💻 CSE Department?</button>
+                <button class="chat-chip" data-question="Central Mess timings?">🍽️ Mess timings?</button>
+            </div>
+        </div>
+
+        <div class="chat-input-bar">
+            <input type="text" id="chat-input" placeholder="Ask about campus facilities, departments, FAQs..." autocomplete="off">
+            <button id="chat-send-btn" class="chat-send-btn" title="Send Question">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Launcher Button -->
+    <button id="chat-toggle-btn" class="chat-launcher-btn" title="Open Campus AI Assistant">
+        <i class="fa-solid fa-comment-dots"></i>
+        <span class="chat-badge-dot"></span>
+    </button>
+
     <script src="js/app.js"></script>
+    <script src="js/chatbot.js"></script>
 
     <!-- Mobile search card toggle script -->
     <script>
