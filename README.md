@@ -27,7 +27,7 @@ CampusNav is an interactive web-based navigation application and query assistant
 ## 📁 Repository Structure
 
 ```
-PR-2001/
+campusnav/
 ├── index.html               # Main application web layout
 ├── style.css                # Custom CSS design system & chatbot styling
 ├── server.js                # Express backend & RAG API server
@@ -95,8 +95,3 @@ PR-2001/
 
 * **`POST /api/reindex`**: Re-generate embeddings dataset when FAQs or academic metadata update.
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
